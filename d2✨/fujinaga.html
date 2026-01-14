@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .about-card {
+            width: 900px;
+            background: linear-gradient(to bottom, #fff2e8, #bb6688);
+            border-radius: 18px;
+            margin: 150px auto;
+            padding: 30px;
+        }
+
+
+        body {
+            margin: 0;
+            background-color: #FADADD;
+        }
+
+       .about-header {
+            background-color: #bb6688;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+        .about-content {
+            display: flex;
+            gap: 32px;
+        }
+
+        .about-photo img {
+            width: 220px;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .about-info {
+            color: white;
+            width: 100%;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 2px solid #602b14;
+            font-size: 16px;
+        }
+
+        .info-row span {
+            font-weight: bold;
+        }
+
+        footer {
+            color: #7A2E0E;
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+
+        .nct {
+            text-align: left;
+            font-size: 80px;
+            color: #4e1700;
+            margin-bottom: 10px;
+            font-weight: 500;
+            margin-top: 100px;
+            margin-left: 300px;
+        }
+
+        .nct p {
+            margin: 0;
+        }
+
+        .wish {
+            text-align: left;
+            font-size: 32px;
+            color: #7A2E0E;
+            margin-top: 10px;
+            margin-left: 300px;
+            font-weight: 300;
+        }
+
+        .news {
+            max-width: 1255px;
+            margin-left: 250px;
+            margin-top: 30px;
+            color: #4e1700;
+            font-size: 20px;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .news h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+        .news p {
+            margin-bottom: 16px;
+            text-align: justify;
+        }
+         footer {
+            color: #7A2E0E;
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 40px;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+    <script>
+        fetch("nav.html")
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("navbar").innerHTML = html;
+            });
+    </script>
+    <div class="about-card">
+        <a href="/d2✨/member.html">
+            <div class="about-header">ABOUT ME</div>
+        </a>
+        <div class="about-content">
+            <div class="about-photo">
+                <img src="/asset/yuyu.jpg" alt="martin-id">
+            </div>
+
+            <div class="about-info">
+                <div class="info-row"><span>FULL NAME</span> FUJINAGA SAKUYA (藤永 咲哉)</div>
+                <div class="info-row"><span>POSITION</span> VOCALIST, MAKNAE</div>
+                <div class="info-row"><span>DATE OF BIRTH</span> NOVEMBER 18, 2007</div>
+                <div class="info-row"><span>ZODIAC SIGN</span> SCORPIO</div>
+                <div class="info-row"><span>PLACE OF BIRTH</span> SAITAMA, JAPAN</div>
+                <div class="info-row"><span>BLOOD TYPE</span> AB</div>
+                <div class="info-row"><span>MBTI</span> ENFP</div>
+                <div class="info-row"><span>NATIONALITY</span> JAPANESE</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="nct">
+        <p>NCT WISH</p>
+    </div>
+
+    <div class="wish">
+        INTO THE WISH : OUR WISH
+    </div>
+
+    <div class="news">
+        <h2>🌱 FUJINAGA SAKUYA</h2>
+
+        <p>
+            Sakuya is the maknae of <strong>NCT WISH</strong>, born in Japan, standing at the very beginning of his
+            journey.
+            There is youth in him—not the restless kind, but the quiet kind that listens, learns, and grows.
+
+            He carries himself with <strong>politeness and restraint</strong>, often reserved, often thoughtful. His
+            shyness is not a
+            weakness; it is part of his sincerity. He speaks softly, moves carefully, and leaves an impression through
+            presence rather than volume.
+
+            On stage, Sakuya becomes clearer.
+            His movements are <strong> light yet intentional</strong>, his expressions open and honest. Each performance
+            shows
+            progress—small, visible steps forward—proof of discipline and steady effort. He is not the most forceful
+            performer, but he is consistent, and that consistency gives him strength.
+
+            Sakuya represents the core of NCT WISH’s concept:
+            <strong>beginnings, and possibility</strong>.
+            He feels like someone still discovering who he is, allowing time to shape him rather than rushing the
+            answer.
+
+            There is something reassuring about watching him grow.
+            Not sudden brilliance, but gradual clarity.
+            Not loud confidence,<strong>but quiet certainty forming over time.</strong>
+        </p>
+        <strong>Sakuya does not bloom to be noticed.
+            He blooms because he is ready—
+            and with time, his light becomes impossible to overlook 🌸 </strong>
+        <p>
+            Sakuya reminds us that youth is not just about energy and noise; it is also about patience, learning, and
+            becoming. In a world that often demands immediate results, his journey is a testament to the value of
+            steady growth and the power of quiet determination.</p>
+    </div>
+<footer>
+        © 2026 About WISH. All Rights Reserved.
+    </footer>
+</body>
+
+</html>

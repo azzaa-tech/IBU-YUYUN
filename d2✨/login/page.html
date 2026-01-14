@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOSKOPBOTAK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="card">
+    <h2>⋆˚࿔ NCTWISH! 𝜗𝜚˚⋆</h2>
+
+    <form id="loginForm">
+        <input type="text" id="nama" placeholder="Username, Nomor Telpon, Email" />
+        <input type="password" id="KTP" placeholder="Password" />
+
+        <button type="submit" class="tombol">Login</button>
+
+        <div class="text">
+            <p>belum punya Akun? <a href="#">Masuk</a></p>
+            <p><a href="#">Lupa Password</a></p>
+        </div>
+    </form>
+</div>
+
+    <script>
+        const form = document.getElementById("loginForm");
+        const nama = document.getElementById("nama");
+        const password = document.getElementById("KTP");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // biar gak reload
+
+            if (nama.value === "" || password.value === "") {
+                alert("Username dan Password tidak boleh kosong!");
+            } else {
+                alert("Login berhasil!");
+                window.location.href = "./halamnutama/halut.html";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

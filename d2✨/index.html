@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wish</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #FADADD;
+        }
+
+        /* FIX NAVBAR */
+        #navbar {
+            position: relative;
+            z-index: 1000;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+        }
+
+        .opening {
+            display: flex;
+            width: 100%;
+            margin-top: -100px;
+        }
+
+        .opening h1 {
+            font-size: 75px;
+            padding-top: 400px;
+            padding-left: 150px;
+            padding-bottom: 450px;
+            font-weight: 500;
+            color: #4e1700;
+        }
+
+        .opening section {
+            font-weight: 100;
+            font-size: 70px;
+            font-style: oblique;
+        }
+
+        .opening img {
+            width: 550px;
+            height: 550px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 200px;
+            margin-left: 440px;
+        }
+
+        footer {
+            color: #7A2E0E;
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+
+        .nct {
+            text-align: center;
+            font-size: 80px;
+            color: #4e1700;
+            margin-bottom: 10px;
+            font-weight: 500;
+            margin-top: -200px;
+        }
+
+        .nct p {
+            margin: 0;
+        }
+
+        .wish {
+            text-align: center;
+            font-size: 32px;
+            color: #7A2E0E;
+            margin-top: 0;
+            font-weight: 300;
+        }
+
+        .gambar {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        button {
+            background-color: #9c5a3e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            margin-bottom: 80px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <script>
+        fetch("nav.html")
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("navbar").innerHTML = html;
+            });
+    </script>
+
+    <main>
+        <div class="opening">
+            <h1>
+                NCT WISH
+                <section>엔시티위시</section>
+            </h1>
+            <img src="/asset/wiww.jpg" alt="martin">
+        </div>
+    </main>
+
+    <div class="nct">
+        <p>NCT WISH</p>
+    </div>
+
+    <div class="wish">
+        INTO THE WISH : OUR WISH
+    </div>
+
+    <div class="btn-wrapper">
+        <button>
+            <a href="/d2✨/member.html">Explore More</a>
+        </button>
+    </div>
+
+    <footer>
+        © 2026 About Martin. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

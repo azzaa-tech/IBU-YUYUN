@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members✨</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #FADADD;
+        }
+
+        .profil {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .nctwi {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0px;
+            margin-bottom: 40px;
+        }
+
+
+        .wish img {
+            width: 700px;
+            height: auto;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0;
+        }
+
+        .card {
+            width: 250px;
+            height: 285px;
+            background-color: #bb6688;
+            border-radius: 10px;
+            transition: transform 0.35s ease, box-shadow 0.35s ease;
+            overflow: hidden;
+        }
+
+
+        .card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 18px 35px rgba(122, 46, 14, 0.35);
+        }
+
+        .cardcoer {
+            margin-top: 80px;
+            margin-bottom: 120px;
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+
+        .card img {
+            width: 190px;
+            height: 200px;
+            align-items: center;
+            justify-content: center;
+            margin-left: 29px;
+            margin-top: 20px;
+            border-radius: 10px;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        .card h1 {
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            transition: letter-spacing 0.3s ease, color 0.3s ease;
+        }
+
+        .card:hover h1 {
+            letter-spacing: 2px;
+            color: #fff2e8;
+        }
+
+        footer {
+            color: #7A2E0E;
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 40px;
+            margin-top: 100px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nct {
+            text-align: center;
+            font-size: 80px;
+            color: #4e1700;
+            margin-bottom: 10px;
+            font-weight: 500;
+            margin-top: 100px;
+        }
+
+        .nct p {
+            margin: 0;
+        }
+
+        .wish {
+            text-align: center;
+            font-size: 32px;
+            color: #7A2E0E;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+    <script>
+        fetch("nav.html")
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById("navbar").innerHTML = html;
+            })
+    </script>
+
+    <div class="nct">
+        <p>NCT WISH</p>
+    </div>
+
+    <div class="wish">
+        INTO THE WISH : OUR WISH
+    </div>
+
+    <div class="cardcoer">
+        <div class="card">
+            <a href="/d2✨/ohsion.html"><img src="/asset/⟢.jpg" alt="martin" /></a>
+            <h1>SION (시온)</h1>
+        </div>
+        <div class="card">
+            <a href="/d2✨/maeda.html"><img src="/asset/🌷.jpg" alt="martin" /></a>
+            <h1>RIKU (리쿠)</h1>
+        </div>
+        <div class="card">
+            <a href="/d2✨/takuno.html"><img src="/asset/yushi !.jpg" alt="martin" /></a>
+            <h1>YUSHI (유우시)</h1>
+        </div>
+    </div>
+
+    <div class="cardcoer">
+        <div class="card">
+            <a href="/d2✨/kim.html"><img src="/asset/🥟.jpg" alt="martin" /></a>
+            <h1>JAEHEE (재희)</h1>
+        </div>
+        <div class="card">
+            <a href="/d2✨/hirose.html"><img src="/asset/nct wish ryo icon.jpg" alt="martin" /></a>
+            <h1>RYO (료)</h1>
+        </div>
+        <div class="card">
+            <a href="/d2✨/fujinaga.html"><img src="/asset/saku.jpg" alt="martin" /></a>
+            <h1>SAKUYA (사쿠야)</h1>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 About WISH. All Rights Reserved.
+    </footer>
+
+</body>
+
+</html>
